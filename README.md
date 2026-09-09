@@ -241,4 +241,5 @@ The application does not connect Envato licensing to Google Play subscriptions.
 
 See **BILLING_SETUP.md** for detailed configuration instructions.
 #   D a y F l o w - v 1 . 0 . 0  
+ #   D a y F l o w - v 1 . 0 . 0  
  
