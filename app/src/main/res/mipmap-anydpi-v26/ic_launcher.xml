@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    DayFlow adaptive icon definition.
+
+    background   — solid colour/gradient fill behind the foreground layer
+    foreground   — the brand "D" vector artwork (ic_launcher_foreground.xml)
+    monochrome   — single-colour silhouette for Android 13+ themed icons
+                   (ic_launcher_monochrome.xml); must NOT reuse the foreground
+                   because the foreground contains multi-colour fills that break
+                   the system tinting required for themed icons.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_monochrome" />
+</adaptive-icon>

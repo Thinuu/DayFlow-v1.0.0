@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FileProvider paths for DayFlow.
+
+    SCOPE: export files only — CSV and JSON backups written to cache and files/exports/.
+    The Room database (databases/), DataStore (files/datastore/), and all other
+    internal storage are deliberately NOT exposed here.
+
+    The FileProvider authority is "${applicationId}.fileprovider" (see AndroidManifest.xml).
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Temporary export files written to Context.cacheDir.
+        Example path: /data/data/<pkg>/cache/dayflow_transactions_2026-09-09.csv
+    -->
+    <cache-path
+        name="exports_cache"
+        path="." />
+
+    <!--
+        Persistent export files written to Context.filesDir/exports/.
+        Only this subdirectory is shared — not the entire files/ root.
+        Example path: /data/data/<pkg>/files/exports/dayflow_backup_2026-09-09.json
+    -->
+    <files-path
+        name="exports"
+        path="exports/" />
+</paths>

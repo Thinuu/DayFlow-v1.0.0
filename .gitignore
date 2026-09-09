@@ -1,0 +1,20 @@
+.gradle/
+build/
+app/build/
+.idea/
+*.iml
+local.properties
+.env
+*.jks
+*.keystore
+.DS_Store
+*.apk
+*.aab
+captures/
+.cxx/
+*.hprof
+.kotlin/
+
+# Room schema export files are intentionally NOT ignored.
+# Commit app/schemas/ to version control to track database schema changes
+# across versions and enable safe migration reviews.

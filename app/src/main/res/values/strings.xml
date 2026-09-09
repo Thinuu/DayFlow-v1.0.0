@@ -1,0 +1,14 @@
+<resources>
+    <!-- Application identity — update these strings when rebranding -->
+    <string name="app_name">DayFlow</string>
+    <string name="app_slogan">Smart Personal Finance &amp; Daily Planner</string>
+    <string name="app_full_name">Personal Finance and Daily Planner</string>
+
+    <!-- Notification channel names and descriptions -->
+    <string name="notification_channel_habits_name">Daily Habits &amp; Routine Reminders</string>
+    <string name="notification_channel_habits_desc">Reminders to complete scheduled daily habits and focus routines.</string>
+    <string name="notification_channel_bills_name">Bill Due Dates &amp; Subscriptions</string>
+    <string name="notification_channel_bills_desc">Alerts for upcoming recurring bills and subscription payment cycles.</string>
+    <string name="notification_channel_budget_name">Budget Alerts &amp; Spending Thresholds</string>
+    <string name="notification_channel_budget_desc">Notifications when approaching or exceeding monthly category limits.</string>
+</resources>

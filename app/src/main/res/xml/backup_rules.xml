@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Android Auto Backup rules (API 31 and below fall back to full-backup-content).
+    https://developer.android.com/guide/topics/data/autobackup
+
+    POLICY: Exclude the Room SQLite database and DataStore preferences from
+    cloud backup. The database contains unencrypted financial records; uploading
+    it to Google Drive without the user's explicit knowledge would be a privacy
+    violation. Users who want to migrate data should use the in-app
+    JSON backup/restore feature (Settings → Backup & Restore).
+-->
+<full-backup-content>
+    <!-- Exclude the Room database file and its write-ahead log -->
+    <exclude domain="database" path="dayflow_database" />
+    <exclude domain="database" path="dayflow_database-shm" />
+    <exclude domain="database" path="dayflow_database-wal" />
+
+    <!-- Exclude DataStore preferences (contains PIN hash, currency, Pro flag) -->
+    <exclude domain="file" path="datastore/dayflow_user_preferences.preferences_pb" />
+
+    <!-- Exclude any raw export files cached by the FileProvider -->
+    <exclude domain="file" path="exports/" />
+</full-backup-content>

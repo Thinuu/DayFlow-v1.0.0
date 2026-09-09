@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    DayFlow monochrome launcher icon layer (Android 13+, API 33+).
+
+    Used by the <monochrome> element in mipmap-anydpi-v26/ic_launcher.xml.
+    The system tints this drawable with the user's wallpaper accent colour, so
+    it MUST be a single flat silhouette — no colour fills, no gradients.
+
+    A single filled white path is conventional; the system applies the tint at
+    render time. The path must fit within the 108dp × 108dp canvas with all
+    meaningful content in the central 72dp safe zone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+        Monochrome silhouette: the same "D" shape as ic_launcher_foreground.xml,
+        merged into a single filled path so the system tint works correctly.
+        Colour is white (#FFFFFFFF) — the system overrides it with its accent tint.
+    -->
+
+    <!-- Left bar of D -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M44,38 L44,70 Q44,73 47,73 L51,73 Q54,73 54,70 L54,38 Q54,35 51,35 L47,35 Q44,35 44,38 Z" />
+
+    <!-- Right arc of D -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M51,35 Q68,35 68,54 Q68,73 51,73 L54,73 Q54,70 54,38 Z" />
+
+    <!-- Accent dot -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M62,66 a3,3 0 1,0 0.001,0 Z" />
+
+</vector>

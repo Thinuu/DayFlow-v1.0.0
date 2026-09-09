@@ -1,0 +1,50 @@
+Envato Market Source Code License
+
+Product: DayFlow | Personal Finance and Daily Planner Android App
+Version: 1.0.0
+
+This item is distributed under the applicable Envato Market license selected by the buyer
+(Regular License or Extended License).
+
+Please refer to the official Envato Market License terms:
+- Regular License: https://codecanyon.net/licenses/terms/regular
+- Extended License: https://codecanyon.net/licenses/terms/extended
+
+The Regular or Extended license governs how you may use and redistribute the item.
+It does not unlock or lock application features inside this source package.
+Buyers receive the full application features described in documentation/.
+
+--------------------------------------------------------------------------------
+THIRD-PARTY DEPENDENCIES & OPEN-SOURCE NOTICES:
+--------------------------------------------------------------------------------
+
+1. AndroidX & Jetpack Compose
+   - License: Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+   - Copyright (c) The Android Open Source Project
+
+2. Kotlin Standard Library & Coroutines
+   - License: Apache License, Version 2.0
+   - Copyright (c) JetBrains s.r.o.
+
+3. AndroidX Room Database & SQLite
+   - License: Apache License, Version 2.0
+   - Copyright (c) The Android Open Source Project
+
+4. AndroidX DataStore Preferences
+   - License: Apache License, Version 2.0
+   - Copyright (c) The Android Open Source Project
+
+5. Material Design 3 Components for Android
+   - License: Apache License, Version 2.0
+   - Copyright (c) Google LLC
+
+6. Google Material Symbols & Vector Icons
+   - License: Apache License, Version 2.0
+   - Copyright (c) Google LLC
+
+7. Robolectric Testing Framework
+   - License: MIT License / Apache License, Version 2.0
+   - Copyright (c) Robolectric Authors
+
+All bundled third-party libraries permit commercial bundling, customization, and redistribution
+under their respective licenses.

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        DayFlow application theme.
+        Compose handles all visual theming via MyApplicationTheme (ui/theme/Theme.kt).
+        This base theme suppresses the system action bar so Compose takes full control.
+        To rebrand: update primary colors in ui/theme/Color.kt and AppConfig.kt.
+    -->
+    <style name="Theme.DayFlow" parent="android:Theme.DeviceDefault.NoActionBar" />
+</resources>

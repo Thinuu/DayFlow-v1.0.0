@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    DayFlow adaptive icon foreground layer.
+
+    Design: stylised "D" letterform inside a rounded container, using the
+    DayFlow brand palette (Radiant Lavender on Deep Indigo).
+
+    Rules for adaptive icon foreground:
+    - Canvas is 108dp × 108dp; the safe zone (always visible) is the central
+      72dp × 72dp. All meaningful content must stay within that inner 72dp circle.
+    - This file is a true vector — no JPG/PNG, so it scales perfectly and the
+      alpha channel is intact for themed icons (Android 8.0+).
+    - The <monochrome> layer in ic_launcher.xml points to ic_launcher_monochrome.xml
+      (a single-colour silhouette) rather than to this file, which would break
+      Android 13+ themed icon rendering.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer soft glow ring — stays within the 72dp safe zone (centre 18→90) -->
+    <path
+        android:fillColor="#33D0BCFF"
+        android:pathData="M54,22 a32,32 0 1,0 0.001,0 Z" />
+
+    <!-- Main circular background disc — brand Deep Indigo -->
+    <path
+        android:fillColor="#FF381E72"
+        android:pathData="M54,26 a28,28 0 1,0 0.001,0 Z" />
+
+    <!-- Stylised "D" letterform — Radiant Lavender (#D0BCFF)
+         A bold rounded-rectangle left stroke plus a right arc that together
+         read clearly as the letter D at small sizes. -->
+
+    <!-- Left vertical bar of the D -->
+    <path
+        android:fillColor="#FFD0BCFF"
+        android:pathData="M44,38 L44,70 Q44,73 47,73 L51,73 Q54,73 54,70 L54,38 Q54,35 51,35 L47,35 Q44,35 44,38 Z" />
+
+    <!-- Right arc of the D — a wide rounded cap -->
+    <path
+        android:fillColor="#FFD0BCFF"
+        android:pathData="M51,35 Q68,35 68,54 Q68,73 51,73 L54,73 Q54,70 54,38 Z" />
+
+    <!-- Small accent dot — bottom right of the D, brand Emerald #10B981 -->
+    <path
+        android:fillColor="#FF10B981"
+        android:pathData="M62,66 a3,3 0 1,0 0.001,0 Z" />
+
+</vector>

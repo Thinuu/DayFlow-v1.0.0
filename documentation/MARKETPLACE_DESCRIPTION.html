@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayFlow | Personal Finance and Daily Planner Android App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #7f8c8d; }
+        ul, ol { margin: 15px 0; }
+        li { margin: 8px 0; }
+        .feature-list { background: #f8f9fa; padding: 20px; border-radius: 8px; }
+        .tech-stack { background: #e8f4f8; padding: 20px; border-radius: 8px; }
+        .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; }
+        .info { background: #d1ecf1; border-left: 4px solid #17a2b8; padding: 15px; margin: 20px 0; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        pre { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+
+<h1>DayFlow | Personal Finance and Daily Planner Android App</h1>
+
+<p><strong>DayFlow</strong> is a comprehensive productivity and personal finance application for Android, built with modern development standards and designed following Google's Material Design 3 guidelines. This all-in-one solution combines daily habit tracking, financial management, budget planning, and intelligent insights into a cohesive, offline-first application.</p>
+
+<h2>Product Introduction</h2>
+
+<p>DayFlow helps users take control of their finances and daily routines through an intuitive, feature-rich Android application. Whether tracking expenses, managing budgets, building habits, or monitoring savings goals, DayFlow provides the tools needed for personal productivity and financial wellness.</p>
+
+<p>Built with 100% Kotlin, Jetpack Compose, and Material Design 3, DayFlow represents modern Android development best practices with clean architecture, MVVM pattern, and Room SQLite for local data persistence.</p>
+
+<h2>Key Features</h2>
+
+<div class="feature-list">
+<h3>Finance Management</h3>
+<ul>
+<li><strong>Multi-Account Tracking</strong> — Manage Checking, Savings, Credit Cards, Cash, and Digital Wallets with real-time balance updates</li>
+<li><strong>Account Transfers</strong> — Balance transfers with automatic dual-entry transaction logging</li>
+<li><strong>Custom Categories</strong> — Create personalized income and expense categories with custom icons and colors</li>
+<li><strong>Currency Selection</strong> — Choose from 12 supported currencies; preference is persisted across sessions</li>
+</ul>
+
+<h3>Budget Management</h3>
+<ul>
+<li><strong>Monthly Budgets</strong> — Set overall monthly spending limits with automatic tracking</li>
+<li><strong>Daily Targets</strong> — Break down monthly budgets into daily spending targets</li>
+<li><strong>Category Budgets</strong> — Assign specific limits to individual expense categories</li>
+<li><strong>Progress Monitoring</strong> — Visual indicators showing budget utilization percentage</li>
+</ul>
+
+<h3>Accounts &amp; Transactions</h3>
+<ul>
+<li><strong>Account Types</strong> — Bank accounts, credit cards, cash, savings, and digital wallets</li>
+<li><strong>Transaction Types</strong> — Income, expense, and transfer transactions</li>
+<li><strong>Payment Methods</strong> — Track payment method for each transaction</li>
+<li><strong>Transaction History</strong> — Complete history with search and filtering</li>
+</ul>
+
+<h3>Savings Goals</h3>
+<ul>
+<li><strong>Goal Tracking</strong> — Create savings goals with target amounts and deadlines</li>
+<li><strong>Progress Visualization</strong> — Visual progress rings showing completion percentage</li>
+<li><strong>Contribution Logging</strong> — Record deposits and withdrawals against each goal</li>
+<li><strong>Multiple Goals</strong> — Track multiple savings goals simultaneously</li>
+</ul>
+
+<h3>Bills &amp; Subscriptions</h3>
+<ul>
+<li><strong>Subscription Tracker</strong> — Manage Netflix, gym, Wi-Fi, and other recurring expenses</li>
+<li><strong>Due Date Display</strong> — View upcoming bill due dates in the Bills tab</li>
+<li><strong>Payment Method Linking</strong> — Associate bills with specific accounts</li>
+<li><strong>Paid / Unpaid Toggle</strong> — Mark bills as paid for the current cycle</li>
+<li><strong>Default Presets</strong> — Pre-configured subscription presets for quick setup</li>
+</ul>
+
+<h3>Daily Planning</h3>
+<ul>
+<li><strong>Habit Tracking</strong> — Track daily habits with streak monitoring</li>
+<li><strong>Time-of-Day Filtering</strong> — Morning, Afternoon, Evening, and Night habit segments</li>
+<li><strong>Streak Analytics</strong> — Consecutive-day tracking and completion rates</li>
+<li><strong>Priority Tasks</strong> — Daily to-do items with Urgent, High, Medium, Low priority levels</li>
+<li><strong>Task Management</strong> — Due dates, completion toggles, and category labels</li>
+</ul>
+
+<h3>Routines &amp; Habits</h3>
+<ul>
+<li><strong>Custom Routines</strong> — Create personalized daily routines</li>
+<li><strong>Flexible Scheduling</strong> — Set specific days of the week for each routine</li>
+<li><strong>Completion Tracking</strong> — Mark routines complete and track consistency</li>
+<li><strong>Streak Motivation</strong> — Visual streak indicators to encourage consistency</li>
+</ul>
+
+<h3>Analytics &amp; Insights</h3>
+<ul>
+<li><strong>DayFlow Score</strong> — A 0–100 wellness score evaluating financial and habit discipline</li>
+<li><strong>Category Analysis</strong> — Category breakdown showing spending distribution</li>
+<li><strong>Budget Utilization</strong> — Track budget vs. actual spending across categories</li>
+<li><strong>Achievement Badges</strong> — Milestone badges unlocked by completing routines and streaks</li>
+<li><strong>On-Device Intelligence</strong> — Rule-based financial insights generated locally, no API required</li>
+</ul>
+
+<h3>Backup &amp; Restore</h3>
+<ul>
+<li><strong>JSON Backup</strong> — Complete database backup in schema-versioned JSON format</li>
+<li><strong>JSON Restore</strong> — Restore from backup with schema version validation</li>
+<li><strong>CSV Export</strong> — Export transactions in standard CSV format for spreadsheet analysis</li>
+<li><strong>Offline Backup</strong> — All backup and restore operations work entirely offline</li>
+</ul>
+
+<h3>Security &amp; Privacy</h3>
+<ul>
+<li><strong>PIN Lock</strong> — 4-digit PIN security lock; PIN is stored as a SHA-256 hash, never in plain text</li>
+<li><strong>Attempt Throttling</strong> — Lock screen blocks input for 30 seconds after 5 consecutive wrong entries</li>
+<li><strong>Local Storage</strong> — 100% offline data storage with Room SQLite</li>
+<li><strong>No Cloud Dependencies</strong> — All data stored locally on device</li>
+<li><strong>Privacy First</strong> — No data collection or external tracking</li>
+<li><strong>Backup Exclusion</strong> — Room database and DataStore are excluded from Android Auto Backup by policy</li>
+</ul>
+
+<h3>Notifications</h3>
+<ul>
+<li><strong>Notification Channels</strong> — Three dedicated channels: habit reminders, bill alerts, budget alerts</li>
+<li><strong>Android 13+ Support</strong> — Runtime POST_NOTIFICATIONS permission request on API 33+</li>
+<li><strong>Permission Graceful Denial</strong> — App continues to work normally if the user denies notification permission</li>
+</ul>
+
+<div class="info">
+<p><strong>Note on notification delivery:</strong> Notification channels are registered and the permission is requested. Scheduling of individual reminder notifications (AlarmManager / WorkManager triggers for specific bill due dates or habit times) is an extension point for buyers to implement based on their scheduling requirements.</p>
+</div>
+
+<h3>Offline Functionality</h3>
+<ul>
+<li><strong>100% Offline</strong> — Complete functionality without internet connection</li>
+<li><strong>On-Device AI</strong> — Financial intelligence runs entirely on-device</li>
+<li><strong>No Server Costs</strong> — No backend infrastructure or recurring costs</li>
+<li><strong>Reliable Performance</strong> — Consistent performance regardless of network conditions</li>
+</ul>
+
+<h3>Starter Templates</h3>
+<ul>
+<li><strong>Blueprint Packs</strong> — Pre-configured habit and budget templates installed in one tap</li>
+<li><strong>Millionaire Morning</strong> — High-performance morning routine template</li>
+<li><strong>50/30/20 Wealth</strong> — Budget template based on the popular budgeting rule</li>
+</ul>
+</div>
+
+<h2>Optional AI Integration</h2>
+
+<div class="info">
+<p><strong>On-Device Financial Intelligence</strong> — DayFlow includes built-in, rule-based financial insights that work completely offline:</p>
+<ul>
+<li>Budget pace analysis and warnings</li>
+<li>Savings rate calculations from income vs. expense</li>
+<li>Goal proximity tracking</li>
+<li>Habit consistency monitoring</li>
+<li>Spending pattern detection</li>
+</ul>
+<p>All local insights work 100% offline without requiring any external services or API keys. The insight engine is provided via an <code>AIProvider</code> interface — buyers can swap in a cloud AI provider by implementing the interface and calling <code>AIService.setProvider()</code>.</p>
+</div>
+
+<div class="warning">
+<p><strong>Optional Cloud AI Integration</strong> — DayFlow includes a pluggable <code>AIProvider</code> interface for connecting third-party AI providers:</p>
+<ul>
+<li><strong>API Credentials Required</strong> — Cloud AI connectivity requires the buyer to configure their own API credentials</li>
+<li><strong>API Costs</strong> — Third-party AI services may charge separately for API usage; costs are not included with this item</li>
+<li><strong>No Cloud Client Shipped</strong> — No Gemini, OpenAI, or other cloud AI client is included; buyers implement their own using the <code>AIProvider</code> interface</li>
+</ul>
+</div>
+
+<h2>Compatibility</h2>
+
+<div class="tech-stack">
+<h3>Platform Requirements</h3>
+<ul>
+<li><strong>Platform</strong>: Android</li>
+<li><strong>Minimum SDK</strong>: 24 (Android 7.0 Nougat)</li>
+<li><strong>Target SDK</strong>: 36 (Android 16)</li>
+<li><strong>Language</strong>: Kotlin 2.2.10 (100% Kotlin)</li>
+<li><strong>UI Framework</strong>: Jetpack Compose + Material Design 3</li>
+<li><strong>Database</strong>: Room SQLite version 4</li>
+<li><strong>Architecture</strong>: MVVM + Repository Pattern</li>
+</ul>
+
+<h3>Development Requirements</h3>
+<ul>
+<li><strong>Android Studio</strong>: Hedgehog (2023.1) or later — AGP 9.1.1 requires a recent Studio release</li>
+<li><strong>JDK</strong>: Java 17 or Java 21 (use the embedded JDK bundled with Android Studio)</li>
+<li><strong>Gradle wrapper</strong>: 9.3.1 (defined in <code>gradle/wrapper/gradle-wrapper.properties</code>)</li>
+<li><strong>AGP</strong>: 9.1.1</li>
+<li><strong>Kotlin</strong>: 2.2.10</li>
+</ul>
+</div>
+
+<h2>Technology Stack</h2>
+
+<div class="tech-stack">
+<ul>
+<li><strong>Language</strong>: Kotlin 2.2.10 (100% Kotlin)</li>
+<li><strong>UI Framework</strong>: Jetpack Compose + Material Design 3</li>
+<li><strong>Architecture</strong>: MVVM (Model-View-ViewModel) + Repository Pattern</li>
+<li><strong>Local Persistence</strong>: Room Database (SQLite) version 4 — entities use <code>Double</code> for monetary amounts; the included <code>Money.kt</code> value object is available for precision arithmetic in business logic</li>
+<li><strong>User Preferences</strong>: Jetpack DataStore Preferences (currency, theme, PIN hash, notification toggle)</li>
+<li><strong>Asynchronous Execution</strong>: Kotlin Coroutines — StateFlow, combine, flatMapLatest</li>
+<li><strong>Lifecycle Management</strong>: <code>collectAsStateWithLifecycle</code> from androidx.lifecycle.compose</li>
+<li><strong>File Sharing</strong>: Android FileProvider — scoped to exports directory only</li>
+<li><strong>Notifications</strong>: Android Notification Channels (POST_NOTIFICATIONS permission for Android 13+)</li>
+</ul>
+</div>
+
+<h2>Architecture</h2>
+
+<p>DayFlow follows modern Android architecture best practices:</p>
+
+<ul>
+<li><strong>MVVM Architecture</strong> — Model-View-ViewModel separation of concerns</li>
+<li><strong>Repository Pattern</strong> — Single source of truth for all data operations (<code>DayFlowRepository</code>)</li>
+<li><strong>Room Database</strong> — Type-safe local SQLite with compile-time query verification; version 4 with explicit migrations</li>
+<li><strong>DataStore Preferences</strong> — Persistent storage for user preferences (currency, theme, PIN hash, notifications)</li>
+<li><strong>Kotlin Coroutines &amp; Flow</strong> — Reactive data streams and async operations</li>
+<li><strong>Jetpack Compose</strong> — Declarative UI with Material Design 3</li>
+<li><strong>Lifecycle-Aware Components</strong> — Efficient state management with <code>collectAsStateWithLifecycle</code></li>
+</ul>
+
+<h2>Customization</h2>
+
+<p>DayFlow is designed for easy customization — all configurable values are centralized in <code>AppConfig.kt</code>:</p>
+
+<ul>
+<li><strong>App Name &amp; Slogan</strong> — <code>APP_NAME</code>, <code>APP_SLOGAN</code> in AppConfig; launcher label in <code>strings.xml</code></li>
+<li><strong>Application ID</strong> — Change <code>applicationId</code> in <code>app/build.gradle.kts</code> and <code>APPLICATION_ID</code> in AppConfig before publishing</li>
+<li><strong>Default Currency</strong> — <code>DEFAULT_CURRENCY_SYMBOL</code> and <code>DEFAULT_CURRENCY_CODE</code></li>
+<li><strong>Supported Currencies</strong> — Add or remove entries from <code>SUPPORTED_CURRENCIES</code> list</li>
+<li><strong>Default Categories</strong> — Edit <code>DEFAULT_CUSTOM_CATEGORIES</code> list; seeded once on first install</li>
+<li><strong>Feature Flags</strong> — 10 boolean flags (AI, PIN lock, export, paywall, blueprints, etc.)</li>
+<li><strong>Play Billing IDs</strong> — <code>PLAY_STORE_PRO_*</code> product ID placeholders</li>
+<li><strong>Support &amp; Legal URLs</strong> — <code>SUPPORT_EMAIL</code>, <code>PRIVACY_POLICY_URL</code>, <code>TERMS_OF_SERVICE_URL</code></li>
+<li><strong>Theme Colors</strong> — Edit <code>ui/theme/Color.kt</code>; dark and light schemes both defined</li>
+</ul>
+
+<p>See <code>documentation/APPCONFIG.md</code> for a complete field-by-field reference with examples.</p>
+
+<h2>Installation</h2>
+
+<ol>
+<li>Extract the downloaded source code archive</li>
+<li>Open Android Studio (Hedgehog or later) and select <strong>Open</strong> to navigate to the project folder containing <code>settings.gradle.kts</code></li>
+<li>Wait for Gradle sync to complete (first sync downloads dependencies)</li>
+<li>Connect an Android device (API 24+) or create an emulator</li>
+<li>Click <strong>Run</strong> to build and launch the application</li>
+</ol>
+
+<p>On first launch, demo data is seeded automatically so all UI sections are populated. Complete setup instructions are in <code>documentation/GETTING_STARTED.md</code>.</p>
+
+<h2>Billing Integration (Optional)</h2>
+
+<div class="info">
+<p>Google Play Billing is <strong>optional</strong> and not required for the application to function. All features work without any billing configuration.</p>
+<ul>
+<li><strong>NoOpBillingService</strong> — Default implementation; does not contact Google Play; all features available</li>
+<li><strong>GooglePlayBillingService</strong> — Template stub; wire the Google Play Billing Library to activate (see BILLING_SETUP.md)</li>
+<li><strong>BillingService interface</strong> — Clean abstraction; swap implementations without changing any UI or ViewModel code</li>
+<li><strong>No Credentials Included</strong> — No real API keys, product IDs, or merchant credentials in the source</li>
+<li><strong>Envato Independence</strong> — No Envato license check at runtime; ProFeatureManager always grants access</li>
+</ul>
+</div>
+
+<p>Complete billing setup instructions are in <code>documentation/BILLING_SETUP.md</code>.</p>
+
+<h2>Documentation</h2>
+
+<p>Comprehensive documentation is included in the <code>documentation/</code> folder:</p>
+
+<ul>
+<li><strong>GETTING_STARTED.md</strong> — Prerequisites, open, build, and run guide</li>
+<li><strong>APPCONFIG.md</strong> — Complete AppConfig field reference with default values and examples</li>
+<li><strong>CUSTOMIZATION.md</strong> — Branding, package name, and configuration guide</li>
+<li><strong>CURRENCY.md</strong> — Currency system architecture and how to add currencies</li>
+<li><strong>ROOM_DATABASE.md</strong> — Full schema reference, migration guide, DAOs</li>
+<li><strong>AI_SETUP.md</strong> — On-device AI and optional cloud AI integration</li>
+<li><strong>BILLING_SETUP.md</strong> — Google Play Billing configuration (optional)</li>
+<li><strong>RELEASE_BUILD.md</strong> — Release APK and AAB build instructions with signing</li>
+<li><strong>PLAY_STORE.md</strong> — Play Store publishing checklist</li>
+<li><strong>TROUBLESHOOTING.md</strong> — Common build and runtime issues</li>
+<li><strong>FAQ.md</strong> — Answers to common buyer questions</li>
+</ul>
+
+<h2>Release Build</h2>
+
+<pre><code># Debug build (no keystore needed)
+./gradlew assembleDebug
+
+# Release APK (requires signing env vars — see RELEASE_BUILD.md)
+./gradlew assembleRelease
+
+# Release AAB for Google Play Store
+./gradlew bundleRelease</code></pre>
+
+<p>R8 minification is enabled for release builds. ProGuard rules covering Room, Kotlin, Compose, DataStore, and app models are included in <code>app/proguard-rules.pro</code>.</p>
+
+<h2>Version Information</h2>
+
+<ul>
+<li><strong>Product Name</strong>: DayFlow | Personal Finance and Daily Planner Android App</li>
+<li><strong>Version</strong>: 1.0.0 (versionCode 1)</li>
+<li><strong>Minimum SDK</strong>: 24 (Android 7.0 Nougat)</li>
+<li><strong>Target SDK</strong>: 36 (Android 16)</li>
+<li><strong>Kotlin</strong>: 2.2.10</li>
+<li><strong>AGP</strong>: 9.1.1</li>
+<li><strong>Gradle wrapper</strong>: 9.3.1</li>
+<li><strong>Compose BOM</strong>: 2024.09.00</li>
+<li><strong>Room</strong>: 2.7.0 (database version 4)</li>
+<li><strong>Java compatibility</strong>: Java 11 source/target; JDK 17 or 21 required to build</li>
+</ul>
+
+</body>
+</html>
